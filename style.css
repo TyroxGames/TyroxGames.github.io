@@ -2,8 +2,15 @@
     --main-color : darkslateblue;
 }
 
-.header {
-    background-image: url(bg.jpg);
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.figure {
+    background-image: url(assets/bg.jpg);
     background-size: cover;
     background-color: #0005;
     background-blend-mode: darken;
@@ -15,22 +22,32 @@
     margin: 0;
     color: white;
 
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    margin-top : 0;
+    padding-top: 0;
+}
+
+.header {
+    padding-top : 0;
+    margin-top: 0;
 }
 
 .main_title {
-    padding-top: 120px;
+    padding-top: 200px;
+    font-family: 'WAGURITTF';
 }
 
 .nav-item {
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 30px;
     margin-left: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 
 .nav-item > a {
-    color: white;
+    color: black;
 }
 
 .em {
@@ -61,17 +78,13 @@
     width: 40px;
 }
 
-.list {
-
-}
-
 .list > li {
     list-style-type: none;
 }
 
 .btn {
     color: white;
-    background-color: var(--main-color);
+    background-color: darkslateblue;
     padding: 5px;
     border-radius: 5%;
 }
@@ -93,9 +106,9 @@ body {
 }
 
 main {
-    text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-left: 40px;
 }
 
 footer {
@@ -103,11 +116,23 @@ footer {
 }
 
 article {
-    text-align: center;
     margin: 10px;
     margin-bottom: 100px;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
     transition: all 1s;
     opacity: 0;
     margin-top: 100px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: #222;
+    }
+    .nav-item a {
+        color: white;
+    }
+    :root {
+        --main-color : lightgreen;
+    }
 }

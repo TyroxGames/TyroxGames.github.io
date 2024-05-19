@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flances Games</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -11,58 +11,51 @@
     <header class="header">
         <nav class="navbar">
             <h4 class="nav-item"><a href="#home">Home</a></h4>
-            <h5 class="nav-item"><a href="#product">Products</a></h5>
-            <h5 class="nav-item"><a href="#portfolio">Portfolio</a></h5>
+            <h5 class="nav-item"><a href="#about">About Flances</a></h5>
+            <h5 class="nav-item"><a href="#faq">FAQ</a></h5>
         </nav>
-        <h1 class="main_title">Lee JaeYoung's Site</h1>
+        <figure class="figure">
+            <h1 class="main_title">Flances Games</h1>
+        </figure>
     </header>
     
-    
     <main>
-        <div class="greenBox box">
-            <p>“Freedom is the freedom to say that two plus two make four. If that is granted, all else follows.”</p>
-            <p>- George Orwell, 1984</p>
-        </div>
         <article id="home">
-            <h3>Welcome To My <span class="em" >Site!</span></h3>
-            <div class="surround">
-                <div class="box">
-                    <img src="youtube.svg">
-                    <p>Subscribe my Youtube Channel!</p>
-                    <a href="https://youtube.com/@SprintStudent" target="_blank" class="btn">Subscribe</a>
-                </div>
-                <div class="box">
-                    <img src="github.svg">
-                    <p>Follow my Github account!</p>
-                    <a href="https://github.com/jaeyoung2012" target="_blank" class="btn">My github account</a>
-                </div>
-            </div>
+            <h2>Flances Games</h2>
+            <p>
+                <span class="em">Flances Game</span>은 게임 개발하는 곳 입니다.
+            </p>
+            <a class="btn" href="#contribute" title="사실 후원 기능 없음" onclick="alert('미구현인데요')">후원하기 ></a>
         </article>
 
-        <article id="product">
-            <h3>My <span class="em">Product</span></h3>
-            <ul class="list">
-                <li>
-                    <h5>Easy to learn web</h5>
-                </li>
-                <li>
-                    <h5>Free Javascript Lecture</h>
-                    
-                </li>
-                <li>
-                    <h5>No Coding by using templates</h5>
-                </li>
-            </ul>
+        <article id="about">
+            <h2 title="글쎄요" onclick="alert('이스터에그 : 왜 누르셨죠?')">Flances Games가 뭐하는 곳인가요?</h2>
+            <p>
+                여러 종류의 게임을 <del><i title="이게 무슨">전문적으로</i></del> 개발하는 곳입니다.
+            </p>
         </article>
 
-        <article id="portfolio">
-            <h3>My <span class="em">Portfolio</span></h3>
-            
+        <article id="faq">
+            <details>
+                <summary title="이런건 왜 궁금해 하시는 거죠?"><b>이름이 왜 Flances인가요?</b></summary>
+                <div style="padding-left: 20px;">
+                    <p>Flances는 자유롭다는 의미를 가지고 있는 이름 입니다.</p>
+                    <p>다른 것에 얽매이지 않고 게임을 개발하겠다는 의미를 담고 있습니다.</p>
+                </div>
+                
+            </details>
+
+            <details>
+                <summary title="이건 또 뭐야"><b>언제 설립되었나요?</b></summary>
+                <div style="padding-left: 20px;">
+                    <p>2024년 5월 19일 월요일이요</p>
+                </div>
+            </details>
         </article>
-        
     </main>
+
     <footer>
-        <div>&copy; 2024 JaeYoung</div>
+        <p>&copy; Copyright 2024 Flances. All rights reserved.</p>
     </footer>
 
     <script src="main.js"></script>
